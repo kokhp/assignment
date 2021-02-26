@@ -1,0 +1,45 @@
+.sign_up{background-color: #fff; display: flex; height: 100vh;}
+.sign_up .img_col{background: url(~/assets/images/chris-yang-H73k0IUQbn0-unsplash.jpg) no-repeat; width: 50%; background-size: cover; background-position: right center;}
+.sign_up .content_col{width: 50%; display: flex; align-items: center; justify-content: center; padding: 20px 40px;}
+.sign_up .content_col .logo_col{position: absolute; right: 45px; top:40px;}
+
+.form_wrap{max-width: 535px; width: 100%;}
+.form_wrap form{margin-top: 40px;}
+.form_wrap h2{font-size: 50px; font-weight: bold;}
+.form_wrap .form-group{margin-bottom: 30px ;}
+.form_wrap .form-group label{margin-bottom: 10px; font-size: 18px;}
+.form_wrap .form-group label i{color: #FF8001; margin-right: 10px;}
+.form_wrap .form-group input{height: 60px; border-radius: 5px; background: #fff; border: 1px solid #e1e1e1;}
+.form_wrap .submit_group .clear_btn{font-style: italic; font-size: 14px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2; margin-left: 25px; display: inline-block;}
+.form_wrap .submit_group .google_btn{display: block; width: 100%; margin-top: 40px; font-size: 16px; font-weight: 500; color: #fff; background-color: #DB4437;}
+.form_wrap .submit_group .google_btn:hover{background-color: #c73f34;}
+.form_wrap .submit_group .google_btn i{margin-right: 15px; opacity: 0.3; color: #fff;}
+
+.form_wrap .form-group ::-webkit-input-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
+.form_wrap .form-group ::-moz-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
+.form_wrap .form-group :-ms-input-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
+.form_wrap .form-group :-moz-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
+
+
+@media only screen and (max-width: 1366px) {
+    .form_wrap form{margin-top: 30px;}
+    .form_wrap form .form-group{margin-bottom: 30px;}
+    .form_wrap form .form-group input{height: 50px;}
+    .form_wrap .submit_group .google_btn{margin-top: 30px;}
+    .form_wrap .form-group label{margin-bottom: 6px;}
+}
+
+@media only screen and (max-width: 1024px) {
+    .form_wrap form .form-group{margin-bottom: 20px;}
+    .form_wrap form .form-group input{height: 40px;}
+    .form_wrap form .form-group label{font-size: 16px;}
+    .form_wrap .submit_group .google_btn{margin-top: 20px;}
+    .form_wrap h2{font-size: 35px;}   
+    .form_wrap p{line-height: 1.2; font-size: 16px;}
+    .form_wrap .btn.btn-primary{padding: 11px 20px; min-width: 200px;}
+}
+@media only screen and (max-width: 767px) {
+    .sign_up .img_col{display: none;}
+    .sign_up .content_col{width: 100%; padding: 130px 25px 70px; overflow: scroll;}
+    
+}
