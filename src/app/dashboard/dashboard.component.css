@@ -1,0 +1,90 @@
+.dashbord_wrap{display: flex;}
+.dashbord_wrap ::ng-deep app-sidebar{width:100%; max-width: 255px; position: fixed; left: 0; top: 0; height: 100vh; overflow: auto;}
+.wrap_contanier{padding-left: 22px; padding-right: 50px; flex: 1 1; margin-left: 255px;}
+
+/* Heared */
+.header_main{padding: 40px 0; display: flex; justify-content: space-between;}
+.header_main .page_title{flex: 1 1 40%;}
+.header_main .page_title span{display: block; font-size: 14px; color: #666666;}
+
+.header_main .right_nav{flex: 1 1 60%; display: flex; justify-content: flex-end; align-items: center;}
+
+.right_nav .user_nav{display: flex; align-items: center;}
+.user_nav p{text-align: right; margin-right: 20px; font-size: 14px; margin-bottom: 0; line-height: 1.2; color: #666666;}
+.user_nav p strong{display: block; color: #1A1A1A;}
+.user_nav button{border: 0; padding: 0;}
+.user_nav button img{border-radius: 5px;}
+
+.notif_col{margin-right: 30px;}
+.notif_col button{padding: 0; border: 0; position: relative;}
+.notif_col button:before{width: 8px; height: 8px; border-radius: 4px; background: #ff7f00; content: ""; position: absolute; top: -2px; right: -3px;}
+
+.search_col{margin-right: 30px;}
+.search_col button{padding: 0; border: 0;}
+
+
+/* Content Wrap */
+
+.card_cover{margin-bottom: 30px;}
+.card_vew{border-radius: 10px; background: #fff; padding: 25px 30px; position: relative;}
+.card_vew h4{font-weight: bold; font-size: 20px; letter-spacing: 0.03em; margin-bottom: 20px;}
+.summary_card ul{display: inline-flex; list-style: none; padding: 0; align-items: center; margin-bottom: 0;}
+.summary_card ul:first-of-type li:first-child{margin-left: 0;}
+.summary_card ul:first-of-type:after{content: ""; width: 0px; height: 35px; background: transparent; border: 1px solid #e1e1e1;}
+.summary_card ul:last-child li:last-child{margin-right: 0;}
+.summary_card ul li{text-align: center; margin: 0 25px; padding: 0;}
+.summary_card span{font-weight: 600; font-size: 30px; letter-spacing: 0.03em}
+.summary_card p{font-size: 14px; letter-spacing: 0.03em; margin-bottom: 0;}
+
+.orange_run{background-color: #FF7F00;}
+.orange_run h4{font-size: 16px; letter-spacing: 0.03em; color: #fff; opacity: 0.5; font-weight: normal;}
+.orange_run ul{display: inline-flex; list-style: none; padding: 0; align-items: center; margin-bottom: 0; width: 100%; justify-content: space-between;}
+.orange_run ul li {padding: 0 35px; position: relative; text-align: center;}
+.orange_run li:after{content: ""; width: 0px; height: 25px; background: transparent; border: 1px solid rgba(255,255,255,0.2); position: absolute; top: 0; bottom: 0; margin: auto; left: 0;}
+.orange_run li:first-child:after{display: none;}
+.orange_run ul li:first-child{padding-left: 0;}
+.orange_run ul li:last-child{padding-right: 0;}
+.orange_run ul li p{font-size: 14px; letter-spacing: 0.03em; color: #fff; margin: 0;}
+.orange_run ul li span{font-weight: 600; font-size: 20px; letter-spacing: 0.03em; color: #fff;}
+
+.map_col ul{position: absolute; top: 25px; right: 0; list-style:none; display: flex; align-items: center;}
+.map_col img{max-width: 100%;}
+.map_col ul li{margin-right: 25px; font-size: 14px; display: flex; align-items: center;}
+.map_col ul li:last-child:before{background:#666666}
+.map_col ul li::before{content: ""; width: 15px; height: 15px; background: #ff7f00; border-radius: 15px; display: inline-block; margin-right: 12px;}
+.today_col p{font-weight: 600; font-size: 14px; letter-spacing: 0.03em; color: #ff7f00; position: absolute; right: 25px; top: 25px;}
+.today_col table{text-align: center; font-size: 14px; margin-bottom: 0;}
+.today_col table td{height: 65px; vertical-align: middle !important;}
+.today_col table th{font-weight: 600; font-style: italic; font-size: 14px; letter-spacing: 0.05em; color: #666;}
+
+
+@media only screen and (max-width: 1875px) {
+    .orange_run ul li{padding: 0 23px;}
+}
+@media only screen and (max-width: 1700px) {
+    .orange_run ul li{padding: 0 19px;}
+    .orange_run ul li span{font-size: 18px; letter-spacing: -0.03em;}
+}
+@media only screen and (max-width: 1500px) {
+    .summary_card p{letter-spacing: -0.03em;}
+    .summary_card span{letter-spacing: -0.03em; font-size: 25px;}
+    .summary_card ul:first-of-type{margin-right: 10px; padding-right: 10px;}
+    .summary_card ul:first-of-type:after{right: -10px; position: relative;}
+    .summary_card ul li{margin: 0 15px}
+    .orange_run span{font-size: 15px;}
+    .orange_run ul li{padding: 0 15px}
+    .wrap_contanier{padding-right: 25px;}
+    .card_vew{padding: 25px;}
+}
+@media only screen and (max-width: 1385px) {
+    .orange_run span{font-size: 15px;}
+    .card_cover{max-width: 50%; flex:0 0 50%}
+    .summary_card ul li{margin:0 8px}
+    .card_vew h4{font-size: 18px; letter-spacing: -0.03em;}
+    .table_cover{overflow: auto;}
+    .today_col table td, .today_col table th{white-space: pre; height: auto;}
+}
+
+@media only screen and (max-width: 1280px) {
+    
+}
