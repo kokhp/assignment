@@ -85,6 +85,55 @@
     .today_col table td, .today_col table th{white-space: pre; height: auto;}
 }
 
-@media only screen and (max-width: 1280px) {
-    
+@media only screen and (max-width: 1024px) {
+    .dashbord_wrap ::ng-deep app-sidebar{display: none;}
+    .wrap_contanier { margin: 0; }
+    .card_vew { padding: 10px; }
+    .summary_card ul:first-of-type { margin-right: 5px; padding-right: 5px; }
+    .summary_card ul li { margin: 0 5px; }
+    .summary_card p { font-size: 11px; }
+    .summary_card ul:first-of-type:after { display: none; }
+    .card_vew h4 { font-size: 16px; }
+    .map_col ul{ top: 10px; right: 0; padding: 0; }
+    .map_col ul li { margin-right: 10px; font-size: 14px; }
+    .map_col ul li::before { width: 12px; height: 12px; border-radius: 12px; margin-right: 3px; }
+    .today_col p { top: 15px; }
+    .orange_run ul { flex-wrap: wrap; }
+    .orange_run ul li { width: 33.33% ;}
+    .orange_run ul li:last-child { width: 100%; margin-top: 10px;}
+    .summary_card ul { width: 100% ; display: flex;}
+    .summary_card ul { justify-content: space-around; }
+    .summary_card ul:first-of-type { justify-content: space-between; margin-bottom: 10px;}
+} 
+@media only screen and (max-width: 768px) {
+    .header_main { flex-wrap: wrap; flex-direction: column-reverse;}
+    .header_main .page_title { flex: 1 1 100%; }
+    .wrap_contanier { width: 100%;}
+    .header_main .right_nav {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .card_cover {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .user_nav p { text-align: right; margin-right: 10px; font-size: 12px; }
+    .notif_col {
+        margin-right: 0;
+    }
+    .search_col {
+        margin-right: 0;
+    }
+    .notif_col img, .search_col img { width: 18px; }
+
+    .page_title h1 { font-size: 22px; }
+    .summary_card span {
+        font-size: 18px;
+    }
+    .card_vew h4 {
+        margin-bottom: 10px;
+    }
+    .map_col ul { position: inherit; }
 }

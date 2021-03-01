@@ -6,7 +6,8 @@
 .form_wrap{max-width: 535px; width: 100%;}
 .form_wrap form{margin-top: 40px;}
 .form_wrap h2{font-size: 50px; font-weight: bold;}
-.form_wrap .form-group{margin-bottom: 30px ;}
+.form_wrap .form-group{margin-bottom: 35px ;}
+.submit_group { margin-top: 5px; }
 .form_wrap .form-group label{margin-bottom: 10px; font-size: 18px;}
 .form_wrap .form-group label i{color: #FF8001; margin-right: 10px;}
 .form_wrap .form-group input{height: 60px; border-radius: 5px; background: #fff; border: 1px solid #e1e1e1;}
@@ -20,6 +21,7 @@
 .form_wrap .form-group :-ms-input-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
 .form_wrap .form-group :-moz-placeholder {font-weight: normal; font-style: italic; font-size: 16px; letter-spacing: 0.03em; text-align: left; color: #d2d2d2;}
 
+.submit_group .btn.btn-primary { background: rgb(255,128,1,0.10) }
 
 @media only screen and (max-width: 1366px) {
     .form_wrap form{margin-top: 30px;}
@@ -38,8 +40,11 @@
     .form_wrap p{line-height: 1.2; font-size: 16px;}
     .form_wrap .btn.btn-primary{padding: 11px 20px; min-width: 200px;}
 }
-@media only screen and (max-width: 767px) {
-    .sign_up .img_col{display: none;}
+@media only screen and (max-width: 768px) {
+    .sign_up { background-color: #fff; display: flex; height: 100%; flex-wrap: wrap; }
     .sign_up .content_col{width: 100%; padding: 130px 25px 70px; overflow: scroll;}
+    .sign_up .img_col { height: 250px; width: 100%; }
+    .content_col{ position: relative;}
+    .sign_up .content_col .logo_col {position: absolute; left: 50%; top: 40px; right: inherit; transform: translate(-50%, 0); }
     
 }
